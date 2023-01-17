@@ -1,0 +1,410 @@
+/* 各个页面相同的样式表：头、尾 */
+
+/* 版心 */
+.wrapper {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+/* 1. 快捷菜单 */
+.shortcut {
+    height: 52px;
+    background-color: #333;
+    line-height: 52px;
+}
+
+.shortcut li {
+    float: right;
+}
+
+.shortcut>.wrapper a {
+    color: #dcdcdc;
+    padding: 0 16px;
+    border-right: 1px solid #666666;
+}
+
+.shortcut>.wrapper li:nth-child(1) a {
+    border-right: 0px;
+    padding-right: 0px;
+}
+
+.shortcut>.wrapper a:hover {
+    color: #fff;
+}
+
+.shortcut>.wrapper a .phone {
+    display: inline-block;
+    margin-right: 8px;
+    width: 13px;
+    height: 18px;
+    background-image: url(../images/sprites.png);
+    background-position: -159px -70px;
+    vertical-align: middle;
+}
+
+/* 2. 头部 */
+.header {
+    margin: 30px auto;
+    height: 70px;
+    line-height: 70px;
+}
+
+.header h1 a {
+    float: left;
+    margin-left: 25px;
+    width: 207px;
+    height: 70px;
+
+    /* SEO 搜索引擎优化 */
+    background-image: url(../images/logo.png);
+    background-size: contain;
+    font-size: 0;
+}
+
+.header .nav ul {
+    float: left;
+    margin-left: 40px;
+}
+
+.header .nav li {
+    float: left;
+    margin-left: 48px;
+    font-family: PingFangSC-Regular;
+}
+
+.header .nav li:first-child {
+    margin-left: 0px;
+}
+
+.header .nav a:hover {
+    color: #27ba9b;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #27ba9b;
+}
+
+.header .search {
+    position: relative;
+    float: left;
+    margin-left: 82px;
+    margin-top: 23px;
+    width: 172px;
+    height: 30px;
+    box-shadow: 0px 2px #e7e7e7;
+
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.header .search .img {
+    position: absolute;
+    top: 3px;
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/sprites.png);
+    background-position: -80px -70px;
+}
+
+.header .search>input {
+    float: left;
+    margin-top: 7px;
+    margin-left: 30px;
+    width: 132px;
+}
+
+.header .search>input::placeholder {
+    color: #cccccc;
+}
+
+.header .car {
+    float: left;
+    margin-left: 15px;
+}
+
+.header .car button {
+    width: 24px;
+    height: 24px;
+    border: none;
+    background-color: #fff;
+    background-image: url(../images/sprites.png);
+    background-position: -118px -69px;
+    vertical-align: middle;
+
+    cursor: pointer;
+}
+
+.header .car .num {
+    position: relative;
+    left: 10px;
+    top: -9px;
+
+	width: 20px;
+	height: 15px;
+	background-color: #e26237;
+	border-radius: 8px;
+
+    font-size: 13px;
+    color: #ffffff;
+}
+
+/* 3. 版权footer */
+.footer {
+    position: relative;
+    height: 345px;
+    background-color: #333;
+
+    list-style: none;
+    color: #999999;
+}
+
+.footer .top {
+    margin: auto 35px;
+    height: 173px;
+    line-height: 173px;
+    /* background-color: skyblue; */
+}
+
+.footer .top>div {
+    margin-top: 58px;
+    width: 186px;
+    height: 60px;
+    line-height: 60px;
+}
+
+.footer .top .one {
+    float: left;
+}
+
+.footer .top .two {
+    float: left;
+    margin-left: 300px;
+}
+
+.footer .top .three {
+    float: right;
+}
+
+.footer .top>div::before {
+    content: '';
+    float: left;
+    width: 60px;
+    height: 60px;
+    background-image: url(../images/sprites.png);
+}
+
+.footer .top h2 {
+    float: left;
+    margin-left: 12px;
+    font-size: 28px;
+    font-family: PingFangSC-Light;
+    color: #fff;
+}
+
+.footer .top .two::before {
+    background-position: -65px 0;
+}
+
+.footer .top .three::before {
+    background-position: -130px 0;
+}
+
+.footer>.line {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 1393px;
+	height: 3px;
+	background-color: #434343;
+}
+
+.footer .bottom {
+    text-align: center;
+}
+
+.footer .bottom ul {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.footer .bottom li {
+    display: inline;
+}
+
+.footer .bottom a {
+    padding: 0 12px;
+    border-left: 1px solid #999999;
+    color: #999999;
+}
+
+.footer .bottom li:first-child a {
+    padding-left: 0;
+    border-left: 0px;
+}
+
+.footer .bottom a:hover {
+    color: #fff;
+}
+
+/* 联系 */
+.contact {
+    margin-top: 42px;
+    height: 320px;
+}
+
+.contact h3 {
+    font-family: PingFangSC-Regular;
+	font-size: 16px;
+    color: #999999; 
+}
+
+.contact p {
+	font-family: PingFangSC-Regular;
+	font-size: 14px;
+    color: #999999; 
+}
+
+.contact>div {
+    float: left;
+    margin-top: 78px;
+    text-align: center;
+}
+
+.contact .box {
+    position: relative;
+    width: 192px;
+    height: 144px;
+}
+
+.contact .box p {
+    margin-top: 8px;
+}
+
+.contact .box .right,
+.contact .box .left {
+    position: absolute;
+    bottom: 0%;
+    width: 92px;
+    height: 92px;
+
+    border: solid 1px #eeeeee;
+}
+
+.contact .box .right {
+   right: 0%;
+}
+
+.contact .box .img {
+    margin: 22px 32px 0px;
+    height: 30px;
+    width: 30px;
+    background-image: url(../images/sprites.png);
+}
+
+.contact .service .left .img {
+    background-position: -250px -70px;
+}
+
+.contact .service .right .img {
+    background-position: -350px -70px;
+}
+
+.contact .service {
+    margin-left: 58px;
+}
+
+.contact .about {
+    margin-left: 118px;
+}
+
+.contact .about .left .img {
+    margin: 22px 27px 0px;
+    height: 38px;
+    width: 38px;
+    background-position: -203px -12px;
+}
+
+.contact .about .right .img {
+    margin: 22px 27px 0px;
+    height: 38px;
+    width: 38px;
+    background-position: -349px -12px;
+}
+
+.contact .about p {
+    margin-top: 0px;
+}
+
+.contact .app {
+    position: relative;
+    margin-left: 92px;
+    width: 242px;
+	height: 156px;
+}
+
+.contact .app .right,
+.contact .app .left {
+    position: absolute;
+    bottom: 0%;
+    width: 116px;
+    height: 116px;
+}
+
+.contact .app .left {
+    border: 1px solid #eeeeee;
+}
+
+.contact .app .right {
+    width: 103px;
+    height: 104px;
+    text-align: left;
+    right: 0%;
+}
+
+.contact .app .right p{
+    margin-left: 6px;
+}
+
+.contact .app .right a{
+    display: block;
+    margin-top: 18px;
+
+    width: 103px;
+    height: 32px;
+    background-color: #27ba9b;
+    font-family: PingFangSC-Regular;
+    text-align: center;
+	font-size: 14px;
+    line-height: 32px;
+	color: #ffffff;
+}
+
+.contact .line {
+    margin-top: 70px;
+    margin-left: 33px;
+	width: 2px;
+	height: 189px;
+	background-color: #f2f2f2;
+}
+
+.contact .telephone {
+    margin-left: 74px;
+    width: 160px;
+	height: 122px;
+    text-align: center;
+}
+
+.contact .telephone .p1 {
+    margin: 0;
+    padding: 0;
+    margin-top: 44px;
+    font-family: PingFangSC-Semibold;
+	font-size: 22px;
+    color: #666666;
+}
+
+.contact .telephone .p2 {
+    font-family: PingFangSC-Light;
+	font-size: 15px;
+    color: #999999;
+}
